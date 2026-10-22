@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Countdown Timer</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb--1"></span>
+    <span class="orb orb--2"></span>
+    <span class="orb orb--3"></span>
+  </div>
+
+  <main class="page">
+    <section class="card" aria-labelledby="pageTitle">
+      <header class="card__header">
+        <p class="eyebrow">Veda Technology Internship</p>
+        <h1 id="pageTitle" class="title">Countdown Timer</h1>
+        <p class="subtitle">Every second brings you closer.</p>
+      </header>
+
+      <div class="event">
+        <span class="event__label">Target Event</span>
+        <h2 id="eventTitle" class="event__title">Launch Day</h2>
+        <time id="targetDate" class="event__date" datetime="">Loading&hellip;</time>
+      </div>
+
+      <div
+        id="progress"
+        class="progress"
+        role="progressbar"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        aria-valuenow="0"
+        aria-labelledby="progressLabel"
+      >
+        <span id="progressLabel" class="sr-only">Countdown progress</span>
+        <div class="progress__track">
+          <div id="progressBar" class="progress__bar"></div>
+        </div>
+        <span id="progressText" class="progress__text">0%</span>
+      </div>
+
+      <div class="units" role="timer" aria-live="polite" aria-atomic="true">
+        <div class="unit">
+          <span id="days" class="unit__value">00</span>
+          <span class="unit__label">Days</span>
+        </div>
+        <div class="unit">
+          <span id="hours" class="unit__value">00</span>
+          <span class="unit__label">Hours</span>
+        </div>
+        <div class="unit">
+          <span id="minutes" class="unit__value">00</span>
+          <span class="unit__label">Minutes</span>
+        </div>
+        <div class="unit">
+          <span id="seconds" class="unit__value">00</span>
+          <span class="unit__label">Seconds</span>
+        </div>
+      </div>
+
+      <p id="status" class="status" role="status" aria-live="assertive"></p>
+
+      <form id="setForm" class="form" novalidate>
+        <label for="targetInput" class="form__label">Set your own target date &amp; time</label>
+        <div class="form__row">
+          <input
+            type="datetime-local"
+            id="targetInput"
+            name="target"
+            class="form__input"
+            aria-describedby="formError"
+          />
+          <button type="submit" class="form__button">Set Countdown</button>
+        </div>
+        <p id="formError" class="form__error" role="alert" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">Built with HTML, CSS &amp; JavaScript</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
