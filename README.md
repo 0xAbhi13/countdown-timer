@@ -20,9 +20,6 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1200&color=7c3aed&center=true&vCenter=true&width=660&lines=Days+%E2%80%A2+Hours+%E2%80%A2+Minutes+%E2%80%A2+Seconds;Live+Updates+Every+Second;Completion+Message+at+Zero" alt="Greeting typing animation" />
 </div>
 
-Countdown Timer by **Abhishek Jadhav** &mdash; Web Developer and first-year BCA student at VIIT, Baramati. Built with **HTML5 + CSS3 + Vanilla JavaScript**: a live countdown to a configurable target date, four timer units, leading zeros, progress bar, date-time picker with validation, and full responsive layout. No frameworks, no build step, no backend.
-
-> **Internship attribution:** 45-day Web Development Internship at **Veda Technology** &mdash; Day 13: Countdown Timer.
 
 <details>
 <summary><b>Table of Contents (click to expand)</b></summary>
@@ -34,11 +31,7 @@ Countdown Timer by **Abhishek Jadhav** &mdash; Web Developer and first-year BCA 
 - [Project Structure](#-project-structure)
 - [How to Run](#-how-to-run)
 - [Profile Links](#-profile-links)
-- [Screenshots](#-screenshots)
-- [Testing Checklist](#-testing-checklist)
-- [Deployment](#-deployment)
-- [Limitations](#-limitations)
-- [Accuracy Notes](#-accuracy-notes)
+
 
 </details>
 
@@ -142,50 +135,3 @@ internship-task-13/
 - Repository: https://github.com/0xAbhi13/countdown-timer
 
 ---
-
-## Screenshots
-
-![Desktop](./assets/screenshot-desktop.svg)
-![Tablet](./assets/screenshot-tablet.svg)
-![Mobile](./assets/screenshot-mobile.svg)
-
----
-
-## Testing Checklist
-
-- [x] Project folder contains `index.html`, `style.css`, `script.js`, `README.md`, and this report.
-- [x] Countdown decreases every second.
-- [x] Days, hours, minutes, seconds are calculated correctly.
-- [x] A countdown set to a future date works.
-- [x] A countdown set to the current time or a past date is handled correctly.
-- [x] Completion message appears at zero.
-- [x] Interval is cleared on completion and before restarting.
-- [x] Changing the target date restarts without duplicate intervals.
-- [x] Invalid date inputs show useful validation messages.
-- [x] All files work together when opening `index.html`.
-- [x] Layout remains usable at mobile screen widths.
-- [x] Browser console contains no errors.
-- [x] `prefers-reduced-motion` disables animations.
-
----
-
-## Deployment
-
-Static site &mdash; deploy the folder contents to GitHub Pages, Netlify, Vercel, or any static host. All asset paths are relative.
-
----
-
-## Limitations
-
-- Demo only: target date is client-side; no persistence or backend.
-- Progress is relative to when the countdown was started in the current session.
-- No sound or notification when the countdown completes.
-
----
-
-## Accuracy Notes
-
-- Timer logic, interval cleanup, and validation match the Veda Technology Task 13 requirements.
-- No framework or build tool was added.
-- All styling uses CSS custom properties and standard CSS3.
-- JavaScript uses only standard `Date`, `setInterval`, and `clearInterval`.
